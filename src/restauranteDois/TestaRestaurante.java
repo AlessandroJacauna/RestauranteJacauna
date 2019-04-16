@@ -1,4 +1,4 @@
-package kiba.restaurante.dois;
+package restauranteDois;
 
 import java.sql.*;
 import java.util.ArrayList;
