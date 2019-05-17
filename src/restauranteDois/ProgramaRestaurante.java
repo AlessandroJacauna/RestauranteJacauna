@@ -14,7 +14,7 @@ public class ProgramaRestaurante {
 		Scanner sc = new Scanner(System.in);
 		
 		
-		Mesa restaurante = new Mesa();
+		Mesa restaurante = new Mesa(0, 1);
 		
 		restaurante.iniciaMesas();
 			
@@ -54,8 +54,8 @@ public class ProgramaRestaurante {
 					int novoNumeroMesa = sc.nextInt();
 					System.out.println("Defina o número de comandas...");
 					int novoNumeroComanda = sc.nextInt();
-					Mesa mesa = new Mesa(novoNumeroMesa, novoNumeroComanda);
-					mesa.setNoArray(mesa.getNumeroMesa() - 1, mesa);
+					Mesa mesa = new Mesa(novoNumeroMesa, 1);
+////////					mesa.setMesa(numeroDaMesa);
 
 					System.out.println(mesa.toString());
 
@@ -69,7 +69,7 @@ public class ProgramaRestaurante {
 					int consultarMesa = sc.nextInt();
 					
 					if (consultarMesa == 0) {
-						restaurante.printListaPrincipal();
+						restaurante.getComandas();
 					
 						} else {
 							System.out.println("=================================");

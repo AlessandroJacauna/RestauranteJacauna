@@ -14,6 +14,7 @@ public class TestaObjetos {
 		Item item2 = new Item("Pepsi", 5);
 		Item item3 = new Item("Jaca", 5);
 		Item item4 = new Item("Fanta", 5);
+		Item item5 = new Item("Acai", 10);
 		
 		List<Item> itens = new ArrayList<>();
 		
@@ -43,9 +44,14 @@ public class TestaObjetos {
 		List<Pedido> pedidos = new ArrayList<>();
 		Pedido pedido1 = new Pedido(itens);
 		Pedido pedido2 = new Pedido(itens2);
+		Pedido pedido3 = new Pedido();
+		pedidos.add(pedido1);
+		pedidos.add(pedido2);
+		pedidos.add(pedido3);
 		
 		System.out.println(pedido2);
 		System.out.println(pedido1);
+		System.out.println(pedidos + "PEDIDOS");
 		
 		System.out.println("----------------------------");
 		
@@ -56,6 +62,9 @@ public class TestaObjetos {
 		comanda2.adicionaPedido(pedido2);
 		System.out.println(comanda2);
 		System.out.println(comanda1);
+		System.out.println(comandas + "COMANDAS");
+		System.out.println(comanda2.getPedidos());
+		System.out.println(comanda2.getComanda());
 		
 	}
 }
